@@ -14,7 +14,7 @@ vector <int> a;
 for (int i = 0; i < n; i++) {
       int temp;
       cin >> temp;
-      if (temp >= check) {
+      if (temp <= check) {
             a.push_back(temp);
       }
 }
