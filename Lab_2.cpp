@@ -7,11 +7,16 @@ vector <int> a = {2, 3, 4, 6, 9, 10, 12, 15, 17, 18, 20, 22, 25};
 int n = a.size(), check = 24;
 
 /*
-На случай, если придется заполнять вектор через консоль
+На случай, если нужно заполнять вектор через консоль
 int n, check;
 cin >> n >> check;
-for (i = 0; i < n; i++) {
-	cin >> a[i];
+vector <int> a;
+for (int i = 0; i < n; i++) {
+      int temp;
+      cin >> temp;
+      if (temp >= check) {
+            a.push_back(temp);
+      }
 }
 */
 
@@ -23,11 +28,5 @@ for (int c = 0; c < n - 1; c++) {
 		}
 	}
 }
-
-// Результат выполнения
-// 2, 22
-// 4, 20
-// 6, 18
-// 9, 15
-	return 0;
+return 0;
 }
